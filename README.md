@@ -1,1 +1,1 @@
-(Portfolio)[https://chinhportfolio.web.app/]
+[Portfolio](https://chinhportfolio.web.app/)
