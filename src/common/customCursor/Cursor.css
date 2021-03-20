@@ -1,0 +1,63 @@
+#mouse-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+.mouse-circle-active {
+  background-color: #f1f1f1;
+}
+
+.mouse-circle-active.click {
+  -webkit-animation: amt-cursor 1s ease-in-out;
+          animation: amt-cursor 1s ease-in-out;
+}
+
+#mouse-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background-color: white;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 999;
+}
+
+.mouse-dot-active {
+  display: none;
+}
+
+@-webkit-keyframes amt-cursor {
+  0% {
+    background-color: #f1f1f1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    background-color: #141414;
+    -webkit-transform: scale(100);
+            transform: scale(100);
+  }
+}
+
+@keyframes amt-cursor {
+  0% {
+    background-color: #f1f1f1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    background-color: #141414;
+    -webkit-transform: scale(100);
+            transform: scale(100);
+  }
+}
+/*# sourceMappingURL=Cursor.css.map */

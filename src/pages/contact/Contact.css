@@ -1,0 +1,140 @@
+.contact-container {
+  padding: 10rem 0rem 4rem 0rem;
+  background-color: #141414;
+}
+
+.contact-container .contact {
+  background-color: #1f1f1f;
+  color: #dedede;
+  padding: 8rem 3rem 4rem 3rem;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px 15px 0 0;
+  z-index: 9;
+}
+
+.contact-container .contact h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #ecb100;
+  position: absolute;
+  width: 100%;
+  top: -35px;
+}
+
+.contact-container .contact > div {
+  width: 100%;
+}
+
+.contact-container .contact > div .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .contact > div .form .box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 48% 48%;
+      grid-template-columns: 48% 48%;
+  margin-bottom: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-container .contact > div .form .message, .contact-container .contact > div .form .btn {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.contact-container .contact > div .form .name, .contact-container .contact > div .form .email, .contact-container .contact > div .form .message {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border: 1px solid #ecb100;
+}
+
+.contact-container .contact > div .form .name label, .contact-container .contact > div .form .email label, .contact-container .contact > div .form .message label {
+  position: absolute;
+  left: 15px;
+  top: -12px;
+  background: #1f1f1f;
+  padding: 0 10px;
+  color: white;
+}
+
+.contact-container .contact > div .form .name input, .contact-container .contact > div .form .email input, .contact-container .contact > div .form .message input {
+  width: 100%;
+  background: #1f1f1f;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  color: white;
+}
+
+.contact-container .contact > div .form .message {
+  height: 150px;
+}
+
+.contact-container .contact > div .form .message textarea {
+  width: 100%;
+  background: #1f1f1f;
+  border: none;
+  outline: none;
+  border-radius: 0;
+  font-size: 1.1rem;
+  padding: 1rem;
+  color: white;
+  height: 100%;
+}
+
+.contact-container .contact > div .form .btn {
+  text-align: center;
+  border: 1px solid #ecb100;
+  padding: 1rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact-container .contact > div .form .btn:hover {
+  background: #ecb100;
+}
+
+@media only screen and (max-width: 879px) {
+  .contact-container {
+    padding: 3rem;
+  }
+  .contact-container .contact {
+    width: auto;
+    padding: 6rem 1rem 1rem 1rem;
+  }
+  .contact-container .contact h2 {
+    font-size: 2rem;
+    top: -24px;
+  }
+  .contact-container .contact > div .form .box {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .contact-container .contact > div .form .box .name {
+    margin-bottom: 3rem;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

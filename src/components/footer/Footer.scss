@@ -1,0 +1,38 @@
+.footer {
+    mix-blend-mode: difference;
+    background-color: #141414;
+    display: flex;
+    padding: 2rem 4rem 3rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 9;
+    .copy-right {
+        color: white;
+        mix-blend-mode: difference;
+        font-size: 0.7rem;
+    }
+    .list-icon {
+        display: flex;
+        .icon {
+            .nav-link {
+                color: white;
+                font-size: 1.2rem;
+                margin: 0 15px;
+                i {
+                    transition: .3s;
+                }
+                &:hover {
+                    i {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 879px) {
+    .footer {
+        padding: 2rem 2rem 1.5rem 2rem;
+    }
+}

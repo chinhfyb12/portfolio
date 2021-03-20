@@ -1,0 +1,95 @@
+.container-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 998;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-loading .loading {
+  width: 100%;
+  height: 0%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 49.9% 2px 49.9%;
+      grid-template-rows: 49.9% 2px 49.9%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container-loading .loading.active {
+  height: 100%;
+}
+
+.container-loading .loading .row1, .container-loading .loading .row3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.container-loading .loading .row1 span, .container-loading .loading .row3 span {
+  display: block;
+  background-color: #141414;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container-loading .loading .row2 span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #ecb100;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.container-loading .loading .row2.active span {
+  width: 100%;
+}
+
+.container-loading .loading .row1.active span:nth-child(3) {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.container-loading .loading .row1.active span:nth-child(2), .container-loading .loading .row1.active span:nth-child(4) {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.container-loading .loading .row1.active span:nth-child(1), .container-loading .loading .row1.active span:nth-child(5) {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+
+.container-loading .loading .row3.active span:nth-child(3) {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.container-loading .loading .row3.active span:nth-child(2), .container-loading .loading .row3.active span:nth-child(4) {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.container-loading .loading .row3.active span:nth-child(1), .container-loading .loading .row3.active span:nth-child(5) {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition-delay: .4s;
+          transition-delay: .4s;
+}
+/*# sourceMappingURL=Loading.css.map */

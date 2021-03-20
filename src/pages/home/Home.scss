@@ -1,0 +1,91 @@
+.home {
+    padding: 0 4rem;
+    background-color: #141414;
+    width: 100%;
+    &.active {
+        display: none;
+    }
+    .col-info {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        .avt {
+            .box {
+                clip-path: polygon(52% 0%, 100% 37%, 58% 100%, 0% 50%);
+                position: relative;
+                z-index: 9;
+            }
+        }
+        .text {
+            margin-top: 1rem;
+            color: white;
+            position: relative;
+            span {
+                color: #01ffad;
+            }
+            p {
+                margin-top: 3rem;
+            }
+            .text-animation {
+                position: relative;
+                font-size: 3rem;
+                color: #141414;
+                -webkit-text-stroke: 0.1vw #393939;
+                padding-top: 2px;
+                width: fit-content;
+                margin-bottom: 5rem;
+                &::before {
+                    content: 'Welcome...';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 100%;
+                    color: white;
+                    -webkit-text-stroke: 0vw #393939;
+                    border-right: 2px solid white;
+                    overflow: hidden;
+                    animation: text-animation 4s infinite ease-in-out;
+                }
+            }
+            .cv {
+                width: fit-content;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border: 1.5px solid white;
+                padding: 1rem;
+                transition: .3s;
+                z-index: 9;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@keyframes text-animation {
+    0%, 10%, 100% {
+        width: 0%;
+    } 70%, 90% {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 879px) {
+    .home {
+        padding: 0 2rem;
+        .col-info {
+            grid-template-columns: 100%;
+            .text {
+                .cv {
+                    position: unset;
+                    margin-top: 3rem;
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}
