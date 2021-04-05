@@ -19,7 +19,7 @@ const Project = () => {
                         <img src={cashop} alt="" />
                     </p>
                     <div className="box-content">
-                        <a href="/">View</a>
+                        <a href="https://cashopp.herokuapp.com" target="_blank" rel="noreferrer">View</a>
                         <p className="name">Cashop</p>
                     </div>
                 </li>

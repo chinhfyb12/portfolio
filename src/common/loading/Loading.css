@@ -37,7 +37,7 @@
 
 .container-loading .loading .row1 span, .container-loading .loading .row3 span {
   display: block;
-  background-color: #141414;
+  background-color: #ecb100;
   -webkit-transition: 1s;
   transition: 1s;
 }
